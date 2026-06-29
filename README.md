@@ -35,19 +35,19 @@ Resume Quest is an AI-powered resume analyzer that evaluates uploaded resumes ag
 
 ### Landing Page
 
-![Landing](assets/landing.png)
+![Landing](assets/landing_page.png)
 
 ### Analysis
 
-![Analysis](assets/result1.png)
+![Analysis](assets/result_page1.png)
 
 ### AI Suggestions
 
-![Suggestions](assets/result2.png)
+![Suggestions](assets/result_page2.png)
 
 ### Interview Questions
 
-![Interview](assets/result3.png)
+![Interview](assets/result_page3result_page2.png)
 
 ## 🚀 Installation
 
