@@ -48,7 +48,7 @@ Resume Quest is an AI-powered resume analyzer that evaluates uploaded resumes ag
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Resume-Quest.git
+git clone https://github.com/Vig-13/Resume-Quest.git
 ```
 
 Navigate to the project
