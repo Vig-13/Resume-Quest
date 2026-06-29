@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Quest - Analysis</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/result.css">
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="container">
+
+<h1 class="title">
+
+🏆 QUEST COMPLETE
+
+</h1>
+
+<p class="subtitle">
+
+Your Hero's Resume Analysis
+
+</p>
+
+<!-- HERO SCORE -->
+
+<div class="card score-card">
+
+<h2>
+
+⚔ Hero Score
+
+</h2>
+
+<div class="score">
+
+{{ analysis.ats_score }}/100
+
+</div>
+
+<div class="progress">
+
+<div
+class="progress-fill"
+style="width: {{ analysis.ats_score }}%;">
+
+</div>
+
+</div>
+
+</div>
+
+<!-- STRENGTHS -->
+
+<div class="card">
+
+<h2>
+
+🛡 Hero Strengths
+
+</h2>
+
+<ul>
+
+{% for item in analysis.strengths %}
+
+<li>✔ {{ item }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+<!-- WEAKNESSES -->
+
+<div class="card">
+
+<h2>
+
+⚠ Bosses To Defeat
+
+</h2>
+
+<ul>
+
+{% for item in analysis.weaknesses %}
+
+<li>✖ {{ item }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+<!-- GRAMMAR -->
+
+<div class="card">
+
+<h2>
+
+📖 Grammar Check
+
+</h2>
+
+<ul>
+
+{% for item in analysis.grammar %}
+
+<li>{{ item }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+<!-- REPHRASED -->
+
+<div class="card">
+
+<h2>
+
+📜 AI Scroll of Wisdom
+
+</h2>
+
+{% for bullet in analysis.rephrased_bullets %}
+
+<div class="rewrite">
+
+<h3>
+
+Original
+
+</h3>
+
+<p>
+
+{{ bullet.original }}
+
+</p>
+
+<h3>
+
+Improved
+
+</h3>
+
+<p class="improved">
+
+{{ bullet.improved }}
+
+</p>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+<!-- QUESTIONS -->
+
+<div class="card">
+
+<h2>
+
+👑 Final Boss Questions
+
+</h2>
+
+<ol>
+
+{% for question in analysis.interview_questions %}
+
+<li>
+
+{{ question }}
+
+</li>
+
+{% endfor %}
+
+</ol>
+
+</div>
+
+<div class="button-area">
+
+<a
+href="/">
+
+<button>
+
+⚔ Analyze Another Resume
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

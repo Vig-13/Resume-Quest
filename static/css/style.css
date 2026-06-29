@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:url("/static/images/background.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+    color:white;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+.overlay{
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:rgba(5,8,20,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.hero{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+    max-width:850px;
+
+    text-align:center;
+
+}
+
+.title{
+
+    font-family:'Press Start 2P',cursive;
+
+    color:#FFD54A;
+
+    font-size:3rem;
+
+    line-height:1.5;
+
+    text-shadow:
+    4px 4px 0 #000;
+
+}
+
+.subtitle{
+
+    margin-top:35px;
+
+    font-size:1.25rem;
+
+    color:#E5E7EB;
+
+    margin-bottom:60px;
+
+}
+
+.drop-area{
+
+    display:block;
+
+    cursor:pointer;
+
+    width:100%;
+
+    min-height:300px;
+
+    border:4px dashed #FFD54A;
+
+    border-radius:25px;
+
+    background:rgba(15,23,42,.88);
+
+    transition:.35s;
+
+    padding:50px;
+
+}
+
+.drop-area:hover{
+
+    transform:translateY(-6px);
+
+    background:rgba(30,41,59,.96);
+
+    box-shadow:0 0 40px rgba(255,213,74,.25);
+
+}
+
+.drop-area input{
+
+    display:none;
+
+}
+
+.upload-icon{
+
+    font-size:65px;
+
+    margin-bottom:25px;
+
+}
+
+.drop-area h2{
+
+    font-size:32px;
+
+    margin-bottom:18px;
+
+}
+
+.drop-area p{
+
+    color:#CBD5E1;
+
+    font-size:18px;
+
+}
+
+.drop-area span{
+
+    display:block;
+
+    margin-top:18px;
+
+    color:#FFD54A;
+
+    font-weight:600;
+
+}
+
+#selectedFile{
+
+    margin-top:35px;
+
+    background:#111827;
+
+    border-radius:12px;
+
+    padding:16px;
+
+    color:#9CA3AF;
+
+    font-weight:600;
+
+}
+
+.analyze-btn{
+
+    width:100%;
+
+    margin-top:35px;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    background:#FFD54A;
+
+    color:#111827;
+
+    transition:.35s;
+
+}
+
+.analyze-btn:hover{
+
+    transform:scale(1.03);
+
+    background:#FFE36C;
+
+}
+
+@media(max-width:768px){
+
+    .title{
+
+        font-size:2rem;
+
+    }
+
+    .drop-area{
+
+        padding:35px;
+
+        min-height:240px;
+
+    }
+
+    .drop-area h2{
+
+        font-size:24px;
+
+    }
+
+}

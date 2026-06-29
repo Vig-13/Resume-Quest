@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Quest</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1 class="title">
+
+                Resume Quest
+
+            </h1>
+
+            <p class="subtitle">
+
+                Level Up Your Career with AI
+
+            </p>
+
+            <form
+                action="/upload"
+                method="POST"
+                enctype="multipart/form-data"
+                id="uploadForm">
+
+                <label class="drop-area" id="drop-area">
+
+                    <input
+                        type="file"
+                        id="fileInput"
+                        name="file"
+                        accept=".pdf"
+                        required>
+
+                    <div class="upload-icon">
+
+                        📜
+
+                    </div>
+
+                    <h2>
+
+                        Drag & Drop Resume Here
+
+                    </h2>
+
+                    <p>
+
+                        or Click Anywhere to Browse
+
+                    </p>
+
+                    <span>
+
+                        PDF Files Only
+
+                    </span>
+
+                    <div id="selectedFile">
+
+                        No Resume Selected
+
+                    </div>
+
+                </label>
+
+                <button
+                    type="submit"
+                    class="analyze-btn">
+
+                    ⚔ Analyze Resume
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
